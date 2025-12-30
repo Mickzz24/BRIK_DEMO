@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --beige: #f6f4ee;
+  --blue: #2563eb;
+  --black: #000;
+  --muted: #6b7280;
+  --shadow: 4px 4px 0 #000;
+}
+
+/* LOGIN */
+.login-bg {
+  background: var(--beige);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  width: 360px;
+  background: #fff;
+  border: 2px solid var(--black);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--black);
+}
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--black);
+  background: var(--blue);
+  color: #fff;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: var(--beige);
+  padding: 16px;
+  border-right: 2px solid var(--black);
+}
+.logo {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.sidebar nav a {
+  display: block;
+  padding: 8px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: var(--black);
+}
+.sidebar nav a.active {
+  background: var(--blue);
+  color: #fff;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border: 2px solid var(--black);
+  box-shadow: var(--shadow);
+}
+.user-box {
+  border: 2px solid var(--black);
+  padding: 4px 8px;
+}
+
+/* PANELS */
+.panel {
+  background: #fff;
+  border: 2px solid var(--black);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-top: 16px;
+}
+
+/* SECTIONS */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.project-feed,
+.video-grid,
+.topic-grid {
+  display: grid;
+  gap: 16px;
+}
+.project-feed { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.video-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.topic-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+
+.h-line {
+  height: 2px;
+  background: var(--black);
+  margin: 14px 0;
+}
+
+.meta { color: var(--muted); font-size: 0.875rem; }
+.link { color: var(--blue); cursor: pointer; }
+.center { text-align: center; }

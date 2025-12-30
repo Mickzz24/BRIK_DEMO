@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BRIK | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">BRIK</div>
+    <nav>
+      <a class="active" href="index.html">Projects</a>
+      <a href="channels.html">Channels</a>
+      <a href="news.html">News</a>
+      <a href="contests.html">Contests</a>
+      <a href="events.html">Events</a>
+      <a href="videos.html">Videos</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <input placeholder="Search projects, topics, people…" />
+      <div class="user-box" id="emailBox"></div>
+    </div>
+
+    <div class="h-line"></div>
+
+    <!-- HERO / CONTEST -->
+    <div class="panel hero">
+      <span class="meta">Contest</span>
+      <h2>Welcome to Hackster Holidays!</h2>
+      <p class="meta">
+        Enter our giveaway to win hardware, plus the Ultimate Workbench Upgrade.
+      </p>
+    </div>
+
+    <!-- FEATURED PROJECTS -->
+    <div class="section-head">
+      <h2>Featured Projects</h2>
+      <span class="link">View all</span>
+    </div>
+
+    <div class="project-feed">
+
+      <div class="project-card" onclick="openProject()">
+        <h3>Edge AI-based Bottle Preparation Machine</h3>
+        <p class="meta">Manivannan</p>
+        <p class="desc">Edge-AI powered automation system.</p>
+        <div class="stats-row">
+          <span>❤️ 8</span>
+          <span>👁 72</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Hand-Controlled Robotic Arm</h3>
+        <p class="meta">Mario Bergeron</p>
+        <p class="desc">Gesture-controlled robotic arm.</p>
+        <div class="stats-row">
+          <span>❤️ 40</span>
+          <span>👁 538</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>MatTris — Tetris on an LED Matrix</h3>
+        <p class="meta">Arnov Sharma</p>
+        <p class="desc">Classic Tetris built on LED hardware.</p>
+        <div class="stats-row">
+          <span>❤️ 36</span>
+          <span>👁 929</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Magic Pages – Self-Turning Book ✨</h3>
+        <p class="meta">Infineon Team</p>
+        <p class="desc">Interactive book with audio & automation.</p>
+        <div class="stats-row">
+          <span>❤️ 34</span>
+          <span>👁 385</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FEATURED VIDEOS -->
+    <div class="section-head">
+      <h2>Featured Videos</h2>
+      <span class="link">View all</span>
+    </div>
+
+    <div class="video-grid">
+      <div class="panel">👀 Keith Sachs at Open Sauce 2025</div>
+      <div class="panel">👀 Makera at Open Sauce 2025</div>
+      <div class="panel">👀 Shariff DMC2 Mini</div>
+      <div class="panel">👀 Ubo Pod AI Assistant</div>
+    </div>
+
+    <!-- TOP TOPICS -->
+    <div class="section-head">
+      <h2>Explore Top Topics</h2>
+      <span class="link">View all</span>
+    </div>
+
+    <div class="topic-grid">
+      <div class="panel">Sensors</div>
+      <div class="panel">Home Automation</div>
+      <div class="panel">Robotics</div>
+      <div class="panel">Internet of Things</div>
+      <div class="panel">AI & Machine Learning</div>
+      <div class="panel">3D Printing</div>
+      <div class="panel">Environmental Sensing</div>
+      <div class="panel">Security</div>
+    </div>
+
+    <!-- DOMAIN SECTION -->
+    <div class="panel">
+      <h2>Newest in Machine Learning & AI</h2>
+      <p class="meta">
+        Algorithms and statistical models that make hardware think and interact.
+      </p>
+
+      <div class="project-feed">
+        <div class="project-card">
+          <h3>Mentor Mitra AI</h3>
+          <p class="meta">Multiple Authors</p>
+        </div>
+        <div class="project-card">
+          <h3>Edge AI Bottle Preparation</h3>
+          <p class="meta">Manivannan</p>
+        </div>
+        <div class="project-card">
+          <h3>Robotic Arm Controller</h3>
+          <p class="meta">Mario Bergeron</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
